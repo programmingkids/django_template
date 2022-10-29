@@ -13,6 +13,16 @@ ul.errorlist li{
     color: #3fa538;
     font-size: 80%;
 }
-.google_image{
+.google_image {
+    padding:0;
+    margin:0;
+    background:none;
+    border:0;
+    font-size:0;
+    line-height:0;
+    overflow:visible;
+}
+.google_image img {
     height: 48px;
 }
+
