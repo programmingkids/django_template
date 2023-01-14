@@ -21,9 +21,12 @@
         </form>
         <div class="m-3 text-center">OR</div>
         <div class="m-3 text-center">
-            <a href="{% provider_login_url 'google' %}">
-                <img src="{% static 'image/btn_google_signin.png' %}" class="google_image">
-            </a>
+            <form action="{% provider_login_url 'google' %}" method="post">
+                {% csrf_token %}
+                <button type="submit" class="google_image">
+                    <img src="{% static 'image/btn_google_signin.png' %}">
+                </button>
+            </form>
             <hr>
             <a href="{% url 'account_signup' %}" class="btn btn-success">新規ユーザ登録</a>
         </div>
